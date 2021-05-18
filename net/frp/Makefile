@@ -21,6 +21,7 @@ GO_PKG_BUILD_PKG:=github.com/fatedier/frp/cmd/...
 
 include $(INCLUDE_DIR)/package.mk
 include ../../lang/golang/golang-package.mk
+export GOPROXY=https://goproxy.cn
 
 define Package/frp/template
   SECTION:=net
